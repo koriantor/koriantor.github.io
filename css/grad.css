@@ -99,49 +99,11 @@ button {
   cursor: pointer; }
 
 #content {
-  margin: 40px auto;
+  margin: 0px auto 40px auto;
   padding: 10px; }
 
 /* Objects */
-.o-row {
-  clear: both; }
-
-.o-row:after {
-  content: "";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both; }
-
-.o-row--gutter {
-  margin: 0 0 -2em 0; }
-
-.o-row--gutter .o-row__col {
-  padding: 0 0 2em 0, border 0; }
-
-@media only screen and (min-width: 720px) {
-  .o-row--gutter {
-    width: calc(100% + 2em); }
-
-  .o-row--gutter .o-row__col {
-    padding: 0 2em 2em 0; }
-
-  .o-row--gutter .o-row__col:last-child {
-    padding: 0 2em 2em 0; } }
-.o-row__col {
-  width: 100%;
-  float: left;
-  min-height: 1px; }
-
 /* Components */
-.c-nav--top {
-  background-color: #7768ae;
-  display: block;
-  height: 50px;
-  width: 100%;
-  z-index: 100;
-  box-shadow: 0px 0px 5px; }
-
 .c-nav--side {
   z-index: 100;
   height: 100%;
@@ -149,7 +111,14 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
   max-width: 20%; }
+
+.c-nav--side::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: radial-gradient(ellipse, #e8e8e8 25%, transparent 75%); }
 
 .c-card {
   display: block;
