@@ -1,2 +1,9 @@
 # koriantor.github.io
-I'm currently using this as a controlled area to show off projects.  I haven't done anything with this yet.
+Hub to show off projects
+
+# Currently Working On
+Material Design Showcase
+Gradient Design Showcase
+
+# Future Plans
+Add links to web application projects
